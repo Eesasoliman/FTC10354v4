@@ -336,8 +336,8 @@ public class PushBotTeleOp extends LinearOpMode {
             robot.BRD.setPower(speed * BRDp);
 
             robot.IN.setPower(intakeSpeed*intakeSpeedMultiplier);
-            robot.LL.setPower(armSpeed*armPower);
-            robot.RL.setPower(armSpeed*armPower);
+            robot.LL.setPower(armSpeed*armPower*-1);
+            robot.RL.setPower(armSpeed*armPower*-1);
             telemetry.update();
 
 
